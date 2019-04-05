@@ -68,27 +68,10 @@ h1, h2, h3, h4, h5 {
 	margin:  0 auto; 
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
-
+    flex-wrap: wrap;
+    
 }
 
-@media(max-width: 800px){
-    .container {
-        background: blue;
-        width: 760px;
-        margin: 20px;
-        padding: 20px;
-    }
-
-    header {
-        margin: 20px;
-        padding: 20px;
-        display: flex; 
-        width: 800px;
-        flex-direction: column-reverse;
-    }
-    
-} 
 
 
 header {
@@ -99,6 +82,16 @@ header {
 	justify-content: space-between;
 }
 
+@media(max-width: 800px) {
+    header { 
+        height: 75px;
+        flex-direction: column-reverse;
+        padding: 0;
+
+    }
+
+}
+
 header nav {
 	display: flex;
 	width: 500px;
@@ -107,19 +100,13 @@ header nav {
 
 @media(max-width: 800px){
     header nav {
-        display: flex;
-        width: 700px;
-        justify-content: space-between;
+        width: 750px;
     }
 
     header .logo {
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 40px;
-    }
-
-    .abc img {
-        display: none;
+        margin-bottom: 20px;
     }
 
 
@@ -137,12 +124,25 @@ nav a {
 	justify-content: space-between;
 }
 
+@media(max-width: 800px){
+    .abc {
+        height: 250px;
+    }
+}
+
 
 .abc img {	
 	width: 330px;
 	height: 330px;
 	margin-right: 40px;
 } 
+
+@media(max-width: 800px) {
+    .abc img {
+        display: none;
+    }
+
+}
 
 .abc-text {
 	display: flex;
@@ -154,10 +154,6 @@ nav a {
 
 @media(max-width: 800px){
     .abc-text {
-        display: flex;
-        flex-direction: column;
-        padding: 40px;
-        width: 400px;
         margin-left: auto;
         margin-right: auto;
         padding-top: 0;
@@ -173,10 +169,25 @@ button {
 	margin-left: 100px;
 }
 
+@media(max-width: 800px){
+    button {
+        width: 130px;
+        margin-left: 40px;
+    } 
+
+}
+
 .abc h1 {
 	display: flex;
 	justify-content: center;
 	flex-direction: column-reverse;
+}
+
+@media(max-width: 800px){
+    .abc h1 {
+        width: 200px;
+    }
+
 }
 
 h1 {
@@ -191,6 +202,16 @@ h1 {
 	margin-left: 15px;
 }
 
+@media(max-width: 800px){
+    .main-content .middle-img {
+        width: 750px;
+        height: 130px;
+        margin-left: 20px;
+    }
+
+}
+
+
 .main-content .top-content {
 	display: flex;
 	flex-direction: row;
@@ -200,9 +221,6 @@ h1 {
 
 @media(max-width: 800px){
     .main-content .top-content {
-        display: flex;
-        border-top: 2px solid lightgrey;
-        margin-left: 30px;
         width: 720px;
     }
 
@@ -211,8 +229,16 @@ h1 {
 .main-content .bottom-content {
 	display: flex;
 	flex-direction: row;
-	border-bottom: 2px solid lightgrey;	
-	padding: 20px;
+	border-bottom: 2px solid black;	
+
+}
+
+@media(max-width: 800px){
+    .main-content .bottom-content {
+        width: 800px;
+        height: 220px;
+    }
+
 }
 
 .main-content h4 {
@@ -220,9 +246,14 @@ h1 {
 	margin: 15px 0;
 	
 }
+
+
+
 .main-content p {
 	margin-bottom: 20px;
 }
+
+
 
 .contact h4 {
 	margin: 15px 0;
@@ -246,6 +277,14 @@ footer {
 	align-items: flex-end;
 	margin-left: 200px;
 }
+
+@media(max-width: 800px){
+    footer {
+        margin-left: 150px;
+        margin-bottom: 20px;
+    }
+
+}
 /* //// services.html//// */
 
 .container {
@@ -254,7 +293,7 @@ footer {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap; 	
-}
+} 
 
 .services {
 	display: flex;
@@ -275,6 +314,7 @@ h3 {
 	padding: 25px;
 }
 
+
 .bottom-content button {
 	height: 30px;
 	margin-left: 50 px;
@@ -285,9 +325,16 @@ h3 {
 	padding-left: 20px;
 }
 
-.bottom-content {
-	margin: 20px;
+@media(max-width: 800px){
+    .bottom-content h4 {
+        padding-top: 0;
+    }
+
 }
+
+/* .bottom-content {
+	margin: 20px;
+} */
 
 
 
@@ -393,6 +440,14 @@ h3 {
 	 list-style-type: square
  }
 
- footer {
+ /* footer {
 	 margin-left: 400px;
- }
+ }   */
+
+ @media(max-width: 800px){
+    .container {
+        background: blue;
+        width: 800px;
+    }
+    
+} 
